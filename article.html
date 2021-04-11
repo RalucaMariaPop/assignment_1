@@ -9,14 +9,17 @@
 </head>
 <body>
     <div class="app_bar">
-        <nav>
+        <nav class="nav_bar">
             <a class="btn" href="index.html"> Home </a>
             <a class="btn" href="post-suggestion.html"> Suggest a post </a>
         </nav>
     </div>
-    <h1></h1>
-    <h2>by <span></span></h2>
-    <p></p>
+
+    <div class="article">
+        <h1 class="article_title"></h1>
+        <h2 class="article_creator">by <span></span></h2>
+        <p class="article_content"></p>
+    </div>
 
     <section class="comments">
         <h2>Comments</h2>
@@ -38,7 +41,7 @@
             <label for="comment_content">Your comment</label>
             <textarea required name="content" id="comment_content"></textarea>
 
-            <input type="submit" value="Submit comment" />
+            <input class="submit_btn" type="submit" value="Submit comment" />
         </form>
     </section>
 
