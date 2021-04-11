@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app_bar">
+        <nav>
+            <a class="btn" href="index.html"> Home </a>
+            <a class="btn" href="post-suggestion.html"> Suggest a post </a>
+        </nav>
+    </div>
+    <h1></h1>
+    <h2>by <span></span></h2>
+    <p></p>
+
+    <section class="comments">
+        <h2>Comments</h2>
+        <template class="commentTemplate">
+            <li class="panel">
+                <h3></h3>
+                <p> by <span></span></p>
+            </li>
+        </template>
+        <ol class="commentList"></ol>
+
+        <form id="commentForm">
+            <label for="comment_username">Username</label>
+            <input type="text" required name="username" id="comment_username">
+
+            <label for="comment_email">E-mail</label>
+            <input type="email" required name="email" id="comment_email">
+
+            <label for="comment_content">Your comment</label>
+            <textarea required name="content" id="comment_content"></textarea>
+
+            <input type="submit" value="Submit comment" />
+        </form>
+    </section>
+
+
+    <script src="article.js"></script>
+</body>
+</html>
